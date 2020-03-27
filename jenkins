@@ -10,3 +10,14 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 yum install jenkins
+systemctl start jenkins.service
+systemctl status jenkins.service
+systemctl enable jenkins.service
+
+enter the localip:8080
+the jenkins page will open
+type ec2
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
+it will display the password and paste in the jenkins browser
+the your jenkins website is ready
