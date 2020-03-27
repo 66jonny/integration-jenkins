@@ -24,3 +24,11 @@ the your jenkins website is ready
 
 youtube website
 https://www.youtube.com/watch?v=Z3S2gMBUkBo
+
+to change the port number
+sudo vim /etc/sysconfig/jenkins
+
+
+JENKINS_PORT=”8123"
+
+sudo systemctl restart jenkins
